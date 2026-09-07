@@ -36,6 +36,20 @@ th { background: #10141D; color: #F5F7FB; font-weight: 700; }
 td { color: #D7DCE6; }
 footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #232936; color: #8F98AC; font-size: 14px; }
 footer a { color: #8F98AC; }
+
+/* 좁은 화면: 표를 가로 스크롤 대신 항목별 카드로 쌓는다 (법적 문서는 대부분 폰에서 읽는다) */
+@media (max-width: 620px) {
+  .table-scroll { overflow-x: visible; }
+  table { min-width: 0; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  tr { display: block; border: 1px solid #232936; border-radius: 12px; padding: 6px 0; margin-bottom: 12px; }
+  td { display: block; border: 0; padding: 8px 14px; }
+  td::before {
+    content: attr(data-label); display: block;
+    color: #8F98AC; font-size: 13px; font-weight: 700; margin-bottom: 2px;
+  }
+  td:first-child { color: #F5F7FB; font-weight: 700; }
+}
 </style>
 </head>
 <body>

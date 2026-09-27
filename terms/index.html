@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>이용약관 · 지잉</title>
-<meta name="description" content="지잉(ziiing) 이용약관">
+<title>이용약관 · Ziiing</title>
+<meta name="description" content="이용약관">
 <meta name="robots" content="index, follow">
 <style>
 :root { color-scheme: dark; }
@@ -17,10 +17,16 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .wrap { max-width: 720px; margin: 0 auto; }
-header { padding: 48px 0 8px; }
+header { padding: 48px 0 8px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #F5F7FB; }
 .ring { width: 26px; height: 26px; border-radius: 50%; border: 8px solid #C6FF3D; }
 .mark span { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+.langs { display: flex; gap: 6px; }
+.langs button {
+  background: transparent; color: #8F98AC; border: 1px solid #232936; border-radius: 999px;
+  padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer;
+}
+.langs button[aria-current="true"] { background: #C6FF3D; color: #07090F; border-color: #C6FF3D; font-weight: 700; }
 h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.8px; margin: 28px 0 8px; }
 h2 { font-size: 19px; font-weight: 700; margin: 40px 0 10px; color: #C6FF3D; }
 p, li { color: #D7DCE6; }
@@ -54,29 +60,171 @@ footer a { color: #8F98AC; }
 </head>
 <body>
 <div class="wrap">
-<header><a class="mark" href="/ziiing-legal/"><span class="ring"></span><span>지잉</span></a></header>
+<header>
+  <a class="mark" href="/ziiing-legal/"><span class="ring"></span><span>Ziiing</span></a>
+  <nav class="langs" aria-label="language"><button type="button" data-set-lang="ko" aria-current="true">한국어</button><button type="button" data-set-lang="en">English</button><button type="button" data-set-lang="ja">日本語</button></nav>
+</header>
+<main>
+<section data-lang="ko" data-title="이용약관 · Ziiing">
 <h1>지잉(ziiing) 이용약관</h1>
-<p>시행일: 2026-09-12</p>
-<h2>1. 서비스</h2>
-<p>지잉은 서로 연결한 친구에게 버튼 하나로 진동 신호를 보내는 앱입니다. 기본 신호에는 문자·이미지가 없습니다.</p>
-<p>다만 일부 스킨(미니폰 등)은 진동과 함께 짧은 문자(최대 500자)를 보낼 수 있고, 보낸 문자는 상대 화면에 그대로 표시됩니다. 또 버튼 스킨을 직접 만들어 스킨 스토어에 공개할 수 있으며, 공개한 스킨의 이름과 모양은 다른 이용자에게 보입니다.</p>
-<h2>2. 계정</h2>
-<ul><li>Apple 또는 Google 계정으로 가입합니다. 만 14세 미만은 이용할 수 없습니다.</li><li>계정은 본인만 사용해야 하며, 앱의 계정 화면에서 언제든 삭제할 수 있습니다.</li></ul>
-<h2>3. 이용 규칙</h2>
-<p>다음 행위는 금지되며, 위반 시 사전 통지 없이 이용이 제한될 수 있습니다.</p>
-<ul><li>상대가 원하지 않는 신호를 반복해서 보내는 행위</li><li>스킨 문자나 공개한 스킨에 욕설·혐오·광고·타인의 개인정보를 담는 행위</li><li>다른 사람을 사칭하는 표시 이름 사용</li><li>초대 코드를 무작위로 입력해 모르는 사람과 연결을 시도하는 행위</li><li>서비스의 정상 운영을 방해하는 행위</li></ul>
-<p>친구가 보내는 신호가 불편하면 음소거, 방해금지 시간, 차단, 신고 기능을 사용할 수 있습니다. 신고가 접수되면 운영자가 확인 후 공개된 스킨을 내리거나 계정 이용을 제한할 수 있습니다. 이용이 제한되면 앱에서 그 사실과 사유를 안내하며, 아래 연락처로 이의를 제기할 수 있습니다.</p>
-<h2>4. 제한</h2>
-<p>남용을 막기 위해 전송 간격과 시간당 전송 횟수, 연결·그룹 수에 상한이 있습니다. 상한은 서비스 상황에 따라 바뀔 수 있습니다.</p>
-<h2>5. 책임</h2>
-<ul><li>앱은 무료로 제공되며, 신호가 지연되거나 전달되지 않을 수 있습니다(네트워크, 기기 설정, 상대의 방해금지 설정 등).</li><li>법이 허용하는 범위에서, 운영자는 서비스 이용으로 발생한 간접 손해에 책임지지 않습니다.</li></ul>
-<h2>6. 변경과 종료</h2>
-<p>약관이 바뀌면 시행일을 갱신하고 중요한 변경은 앱에서 알립니다. 운영자는 사전 공지 후 서비스를 종료할 수 있습니다.</p>
-<h2>7. 문의</h2>
+<p>시행일: 2026-09-27</p>
+<h2>제1조 (목적)</h2>
+<p>이 약관은 지잉 운영자(이하 &quot;운영자&quot;)가 제공하는 지잉 앱과 관련 웹 서비스(스킨 스튜디오 포함, 이하 &quot;서비스&quot;)의 이용 조건과 운영자·이용자의 권리, 의무를 정합니다.</p>
+<p>운영자 정보: 이영재(개인) · 문의 ori_@kakao.com</p>
+<h2>제2조 (정의)</h2>
+<ul><li>1. &quot;신호&quot;는 서비스로 친구나 그룹에 보내는 진동·효과를 말합니다.</li><li>2. &quot;이용자 콘텐츠&quot;는 이용자가 서비스에 입력하거나 올린 표시 이름, 그룹 이름, 톡의 뜻, 직접 만든 스킨(이미지·소리·애니메이션·이름 포함) 등을 말합니다.</li><li>3. &quot;스킨&quot;은 버튼의 모양·소리·효과를 바꾸는 디지털 항목을, &quot;조각&quot;은 스킨 교환에 쓰는 서비스 내 단위를 말합니다.</li></ul>
+<h2>제3조 (약관의 게시와 변경)</h2>
+<ul><li>1. 운영자는 이 약관을 앱과 웹 페이지에 게시합니다.</li><li>2. 운영자는 관련 법령을 위반하지 않는 범위에서 약관을 바꿀 수 있습니다. 바꿀 때는 시행일 7일 전부터, 이용자에게 불리한 변경은 30일 전부터 앱이나 웹 페이지에 알립니다.</li><li>3. 이용자가 시행일까지 거부 의사를 밝히지 않고 서비스를 계속 이용하면 바뀐 약관에 동의한 것으로 봅니다. 동의하지 않는 이용자는 탈퇴할 수 있습니다.</li></ul>
+<h2>제4조 (계정)</h2>
+<ul><li>1. 이용자는 Apple 또는 Google 계정으로 가입합니다. 가입 화면에서 계속하면 이 약관과 개인정보 처리방침에 동의한 것으로 봅니다.</li><li>2. <strong>만 14세 미만은 가입하거나 이용할 수 없습니다.</strong> 나이를 속이고 가입한 경우 운영자는 계정을 삭제할 수 있으며, 그로 인한 책임은 이용자에게 있습니다.</li><li>3. 계정은 본인만 사용해야 하며, 계정 관리 소홀이나 제3자 사용으로 생긴 손해는 이용자가 책임집니다.</li></ul>
+<h2>제5조 (서비스의 제공과 변경)</h2>
+<ul><li>1. 서비스는 무료로 제공됩니다. 운영자는 앞으로 유료 기능이나 광고를 도입할 수 있으며, 도입 전에 알립니다.</li><li>2. 운영자는 운영·기술상 필요에 따라 서비스의 기능, 스킨, 이벤트, 뽑기 구성의 전부나 일부를 추가·변경·종료할 수 있습니다. 이용자에게 중대한 영향이 있으면 미리 알립니다.</li><li>3. 운영자는 점검, 설비 장애, 외부 서비스(Apple, Google, 호스팅 사업자 등)의 장애, 천재지변 등이 있으면 서비스를 일시 중단할 수 있습니다.</li><li>4. 운영자는 30일 전에 알린 뒤 서비스 전체를 종료할 수 있습니다.</li><li>5. 남용을 막기 위해 전송 간격, 시간당 전송 횟수, 연결·그룹·신고·제출 수에 상한을 둡니다. 상한은 서비스 상황에 따라 바뀔 수 있습니다.</li></ul>
+<h2>제6조 (긴급 용도 사용 금지)</h2>
+<p><strong>신호는 네트워크, 기기 설정, 알림 권한, 상대의 방해금지·차단 설정 등에 따라 늦거나 전달되지 않을 수 있습니다.</strong> 서비스를 긴급 연락, 안전 확인, 의료·보호 목적으로 쓰지 마세요. 운영자는 신호가 늦거나 전달되지 않아 생긴 손해에 책임지지 않습니다.</p>
+<h2>제7조 (금지 행위)</h2>
+<p>지잉은 불쾌하거나 해로운 콘텐츠와 다른 이용자를 괴롭히는 행위를 허용하지 않습니다. 다음 행위는 금지됩니다.</p>
+<ul><li>1. 상대가 원하지 않는 신호를 반복해서 보내거나 다른 이용자를 괴롭히는 행위</li><li>2. 이용자 콘텐츠에 욕설, 혐오, 성적·폭력적 표현, 불법 정보, 광고, 타인의 개인정보를 담는 행위</li><li>3. 타인의 저작권, 상표권, 초상권 등 권리를 침해하는 스킨을 올리는 행위</li><li>4. 다른 사람이나 운영자를 사칭하는 행위</li><li>5. 초대 코드를 무작위로 입력해 모르는 사람과 연결을 시도하는 행위</li><li>6. 버그, 자동화 도구, 여러 계정을 이용해 스킨·조각·뽑기 기회를 부정하게 얻는 행위</li><li>7. 서비스를 역설계하거나 서버에 무단 접근하는 등 정상 운영을 방해하는 행위</li></ul>
+<h2>제8조 (이용자 콘텐츠)</h2>
+<ul><li>1. 이용자 콘텐츠의 권리는 이용자에게 있습니다. 이용자는 자신이 올린 콘텐츠를 적법하게 사용할 권리를 가졌으며, 그것이 제3자의 권리를 침해하지 않음을 보증합니다.</li><li>2. 이용자는 운영자에게 이용자 콘텐츠를 서비스 제공, 스킨 스토어 공개, 축소판·미리보기 제작, 서비스 홍보(앱 화면 캡처, 스토어 이미지 등)를 위해 전 세계에서 무상으로 사용·복제·수정·전시·배포할 수 있는 비독점적 권리를 부여합니다. 이 권리는 이용자가 콘텐츠를 내리거나 탈퇴해도, 이미 다른 이용자가 착용 중인 범위와 이미 제작된 홍보물에 대해서는 유지됩니다.</li><li>3. 공개 스킨은 운영자의 검토를 거쳐 공개됩니다. 운영자는 검토 결과에 대한 이유를 안내하지만, 공개 여부는 운영자가 정합니다.</li><li>4. 운영자는 신고를 받았거나 이 약관·법령에 어긋난다고 판단한 이용자 콘텐츠를 사전 통지 없이 숨기거나 삭제할 수 있습니다. 운영자는 신고를 접수하면 24시간 안에 검토를 시작합니다.</li><li>5. 이용자 콘텐츠 때문에 제3자와 분쟁이 생기면 이용자가 자신의 비용과 책임으로 해결하며, 운영자가 손해를 입으면 이를 배상합니다.</li></ul>
+<h2>제9조 (스킨, 조각, 뽑기)</h2>
+<ul><li>1. 스킨과 조각은 서비스 안에서 사용할 수 있는 이용권이며 이용자의 재산이 아닙니다. 현금이나 다른 재화로 바꾸거나 다른 계정으로 넘길 수 없습니다.</li><li>2. 무료 뽑기의 스킨별 확률은 앱의 뽑기 화면에 표시합니다. 운영자는 뽑기 구성, 확률, 지급 조건, 교환 비용을 바꿀 수 있으며, 바꾸면 앱에 표시합니다.</li><li>3. 오류나 부정한 방법으로 얻은 스킨·조각은 운영자가 회수할 수 있습니다.</li><li>4. 탈퇴하거나 서비스가 종료되면 보유한 스킨과 조각은 사라지며 복구되지 않습니다.</li><li>5. 유료 상품을 도입하는 경우 그 구매·환불 조건은 별도로 안내하며, 관련 법령과 앱 마켓의 정책을 따릅니다.</li></ul>
+<h2>제10조 (신고, 차단, 이용 제한)</h2>
+<ul><li>1. 이용자는 음소거, 방해금지 시간, 차단, 신고 기능으로 원하지 않는 신호와 콘텐츠를 막을 수 있습니다.</li><li>2. 운영자는 이용자가 이 약관이나 법령을 위반하면 경고, 콘텐츠 삭제, 일시 정지, 영구 정지, 계정 삭제 중 필요한 조치를 할 수 있습니다. 위반이 중대하거나 다른 이용자 보호가 급하면 사전 통지 없이 조치하고 사후에 알립니다.</li><li>3. 이용이 제한되면 앱에서 그 사실과 사유를 안내하며, 이용자는 아래 연락처로 이의를 제기할 수 있습니다.</li></ul>
+<h2>제11조 (탈퇴)</h2>
+<p>이용자는 앱의 계정 화면에서 언제든 탈퇴할 수 있습니다. 탈퇴하면 계정과 관련 정보는 개인정보 처리방침에 따라 삭제되며, 되돌릴 수 없습니다.</p>
+<h2>제12조 (책임의 제한)</h2>
+<ul><li>1. 서비스는 무료로 &quot;있는 그대로&quot; 제공됩니다. 운영자는 서비스가 중단 없이 또는 오류 없이 제공된다고 보증하지 않습니다.</li><li>2. 운영자는 다음 손해에 책임지지 않습니다. 다만 운영자의 고의나 중대한 과실로 생긴 손해는 예외입니다.</li><li>(1) 제5조 제3항의 사유로 생긴 서비스 중단</li><li>(2) 이용자의 귀책사유나 기기·네트워크 환경으로 생긴 손해</li><li>(3) 이용자 사이 또는 이용자와 제3자 사이의 분쟁</li><li>(4) 이용자 콘텐츠와 다른 이용자가 보낸 신호의 내용</li><li>(5) 간접손해, 특별손해, 결과적 손해, 기대 이익의 상실</li><li>3. 법령이 허용하는 범위에서 운영자의 경과실로 인한 손해배상 책임은 손해가 생기기 전 3개월 동안 이용자가 운영자에게 지급한 금액을 한도로 합니다.</li></ul>
+<h2>제13조 (이용자의 손해배상)</h2>
+<p>이용자가 이 약관이나 법령을 위반해 운영자나 제3자에게 손해를 입히면 그 손해를 배상해야 합니다. 이 경우 운영자가 제3자로부터 청구를 받으면 이용자는 자신의 비용으로 운영자를 면책시켜야 합니다.</p>
+<h2>제14조 (앱 마켓)</h2>
+<p>App Store에서 내려받은 경우 Apple의 표준 최종 사용자 사용권 계약(Licensed Application EULA)도 함께 적용됩니다. 서비스와 이 약관에 대한 책임은 운영자에게 있으며 Apple은 서비스의 유지·지원이나 이용자의 청구에 대해 책임지지 않습니다. Google Play도 같습니다.</p>
+<h2>제15조 (준거법과 관할)</h2>
+<p>이 약관은 대한민국 법을 따릅니다. 서비스와 관련한 분쟁은 민사소송법에 따른 관할 법원에서 해결합니다.</p>
+<h2>제16조 (문의)</h2>
 <p>이메일: ori_@kakao.com</p>
+<p>부칙: 이 약관은 시행일부터 적용하며, 2026-09-12 판을 대체합니다.</p>
+</section>
+<section data-lang="en" data-title="Terms of Service · Ziiing" hidden>
+<h1>Ziiing Terms of Service</h1>
+<p>Effective date: 2026-09-27</p>
+<p>These terms are provided in Korean, English and Japanese. If they conflict, the Korean version prevails.</p>
+<h2>1. Purpose</h2>
+<p>These terms set out the conditions for using the Ziiing app and related web services, including the skin studio (the &quot;Service&quot;), provided by the operator of Ziiing (the &quot;Operator&quot;), and the rights and obligations of the Operator and users.</p>
+<p>Operator: Youngjae Lee (individual) · Contact: ori_@kakao.com</p>
+<h2>2. Definitions</h2>
+<ul><li>1. A &quot;signal&quot; is a vibration or effect sent to a friend or group through the Service.</li><li>2. &quot;User content&quot; means anything a user enters or uploads to the Service, including display names, group names, tap meanings, and skins the user creates (including images, sounds, animations and names).</li><li>3. A &quot;skin&quot; is a digital item that changes a button&#39;s look, sound or effects. A &quot;piece&quot; is an in-Service unit used to exchange skins.</li></ul>
+<h2>3. Publication and changes</h2>
+<ul><li>1. The Operator posts these terms in the app and on the web.</li><li>2. The Operator may change these terms within the limits of applicable law. Changes are announced in the app or on the web at least 7 days before they take effect, or 30 days before for changes unfavorable to users.</li><li>3. If a user keeps using the Service after the effective date without objecting, the user is deemed to accept the changed terms. Users who do not agree may delete their account.</li></ul>
+<h2>4. Accounts</h2>
+<ul><li>1. Users sign up with an Apple or Google account. Continuing on the sign-up screen means you agree to these terms and the privacy policy.</li><li>2. <strong>You must be at least 14 years old to sign up or use the Service.</strong> If a user signs up with a false age, the Operator may delete the account, and the user is responsible for the consequences.</li><li>3. Accounts are personal. Users are responsible for losses caused by careless account management or use by others.</li></ul>
+<h2>5. Providing and changing the Service</h2>
+<ul><li>1. The Service is free. The Operator may introduce paid features or advertising in the future and will announce them beforehand.</li><li>2. For operational or technical reasons, the Operator may add, change or end all or part of the features, skins, events and draw lineups. Material changes are announced in advance.</li><li>3. The Operator may temporarily suspend the Service for maintenance, equipment failure, outages of third-party services (Apple, Google, hosting providers, etc.), natural disasters and similar events.</li><li>4. The Operator may end the entire Service after 30 days&#39; notice.</li><li>5. To prevent abuse, limits apply to send intervals, sends per hour, and the number of connections, groups, reports and submissions. Limits may change.</li></ul>
+<h2>6. Not for emergencies</h2>
+<p><strong>Signals may be delayed or not delivered because of the network, device settings, notification permissions, or the recipient&#39;s quiet hours or blocks.</strong> Do not use the Service for emergency contact, safety checks, or medical or caregiving purposes. The Operator is not liable for losses caused by delayed or undelivered signals.</p>
+<h2>7. Prohibited conduct</h2>
+<p>Ziiing does not tolerate objectionable or harmful content or abusive users. The following are prohibited:</p>
+<ul><li>1. Repeatedly sending unwanted signals or harassing other users</li><li>2. Putting profanity, hate, sexual or violent content, illegal information, advertising, or other people&#39;s personal information in user content</li><li>3. Uploading skins that infringe copyrights, trademarks, portrait rights or other rights</li><li>4. Impersonating another person or the Operator</li><li>5. Entering random invite codes to connect with strangers</li><li>6. Obtaining skins, pieces or draws unfairly through bugs, automation or multiple accounts</li><li>7. Reverse engineering the Service, accessing servers without authorization, or otherwise disrupting operations</li></ul>
+<h2>8. User content</h2>
+<ul><li>1. Users keep the rights to their user content. Users warrant that they have the right to use what they upload and that it does not infringe anyone else&#39;s rights.</li><li>2. Users grant the Operator a worldwide, royalty-free, non-exclusive license to use, reproduce, modify, display and distribute user content to provide the Service, publish skins in the store, create thumbnails and previews, and promote the Service (for example, app screenshots and store images). This license survives removal of the content or account deletion to the extent other users are already wearing it and for promotional materials already made.</li><li>3. Public skins are published after the Operator&#39;s review. The Operator explains review results, but the Operator decides whether to publish.</li><li>4. The Operator may hide or delete user content that is reported or that the Operator considers to violate these terms or the law, without prior notice. The Operator starts reviewing reports within 24 hours.</li><li>5. Users resolve third-party disputes arising from their user content at their own cost and responsibility and compensate the Operator for any resulting loss.</li></ul>
+<h2>9. Skins, pieces and draws</h2>
+<ul><li>1. Skins and pieces are licenses to use within the Service, not property of the user. They cannot be exchanged for cash or other goods or transferred to another account.</li><li>2. The odds for each skin in the free draw are shown on the draw screen. The Operator may change draw lineups, odds, grant conditions and exchange costs, and shows changes in the app.</li><li>3. The Operator may reclaim skins or pieces obtained through errors or unfair means.</li><li>4. Skins and pieces are lost and cannot be restored when a user deletes their account or the Service ends.</li><li>5. If paid items are introduced, their purchase and refund terms will be provided separately and follow applicable law and app store policies.</li></ul>
+<h2>10. Reports, blocks and restrictions</h2>
+<ul><li>1. Users can stop unwanted signals and content with mute, quiet hours, block and report.</li><li>2. If a user violates these terms or the law, the Operator may warn, remove content, suspend temporarily or permanently, or delete the account as needed. For serious violations or when other users urgently need protection, the Operator may act without prior notice and notify afterwards.</li><li>3. Restricted users are told about the restriction and its reason in the app and may appeal through the contact below.</li></ul>
+<h2>11. Account deletion</h2>
+<p>Users can delete their account at any time from the account screen in the app. On deletion, the account and related information are deleted under the privacy policy and cannot be restored.</p>
+<h2>12. Limitation of liability</h2>
+<ul><li>1. The Service is provided free of charge and &quot;as is&quot;. The Operator does not warrant that the Service will be uninterrupted or error-free.</li><li>2. The Operator is not liable for the following, except for losses caused by the Operator&#39;s intent or gross negligence:</li><li>(1) Interruptions for the reasons in Section 5(3)</li><li>(2) Losses caused by the user&#39;s fault or device or network environment</li><li>(3) Disputes between users, or between users and third parties</li><li>(4) User content and the content of signals sent by other users</li><li>(5) Indirect, special or consequential damages, or lost profits</li><li>3. To the extent permitted by law, the Operator&#39;s liability for ordinary negligence is limited to the amount the user paid the Operator in the 3 months before the loss occurred.</li></ul>
+<h2>13. User liability</h2>
+<p>Users who violate these terms or the law must compensate the Operator or third parties for resulting losses. If a third party makes a claim against the Operator, the user must indemnify the Operator at the user&#39;s own expense.</p>
+<h2>14. App stores</h2>
+<p>If you downloaded the app from the App Store, Apple&#39;s standard Licensed Application End User License Agreement also applies. The Operator, not Apple, is responsible for the Service and these terms, and Apple has no obligation to maintain or support the Service or to handle user claims. The same applies to Google Play.</p>
+<h2>15. Governing law and jurisdiction</h2>
+<p>These terms are governed by the laws of the Republic of Korea. Disputes about the Service are resolved in the court with jurisdiction under the Korean Civil Procedure Act.</p>
+<h2>16. Contact</h2>
+<p>Email: ori_@kakao.com</p>
+<p>Addendum: These terms apply from the effective date and replace the version dated 2026-09-12.</p>
+</section>
+<section data-lang="ja" data-title="利用規約 · Ziiing" hidden>
+<h1>Ziiing 利用規約</h1>
+<p>施行日：2026-09-27</p>
+<p>本規約は韓国語・英語・日本語で提供します。内容に相違がある場合は韓国語版が優先します。</p>
+<h2>第1条（目的）</h2>
+<p>本規約は、Ziiing の運営者（以下「運営者」）が提供する Ziiing アプリおよび関連ウェブサービス（スキンスタジオを含む。以下「本サービス」）の利用条件と、運営者および利用者の権利・義務を定めます。</p>
+<p>運営者：イ・ヨンジェ（Youngjae Lee、個人）・お問い合わせ ori_@kakao.com</p>
+<h2>第2条（定義）</h2>
+<ul><li>1. 「シグナル」とは、本サービスを通じて友だちやグループに送る振動・効果をいいます。</li><li>2. 「利用者コンテンツ」とは、利用者が本サービスに入力またはアップロードした表示名、グループ名、タップの意味、自作スキン（画像・音・アニメーション・名前を含む）などをいいます。</li><li>3. 「スキン」とはボタンの見た目・音・効果を変えるデジタルアイテムを、「かけら」とはスキンの交換に使う本サービス内の単位をいいます。</li></ul>
+<h2>第3条（規約の掲示と変更）</h2>
+<ul><li>1. 運営者は本規約をアプリとウェブページに掲示します。</li><li>2. 運営者は関連法令に反しない範囲で本規約を変更できます。変更する場合は施行日の7日前から、利用者に不利な変更は30日前から、アプリまたはウェブページでお知らせします。</li><li>3. 利用者が施行日までに拒否の意思を示さず本サービスの利用を続けた場合、変更後の規約に同意したものとみなします。同意しない利用者は退会できます。</li></ul>
+<h2>第4条（アカウント）</h2>
+<ul><li>1. 利用者は Apple または Google のアカウントで登録します。登録画面で続行すると、本規約とプライバシーポリシーに同意したものとみなします。</li><li>2. <strong>14歳未満の方は登録・利用できません。</strong> 年齢を偽って登録した場合、運営者はアカウントを削除でき、その責任は利用者が負います。</li><li>3. アカウントは本人のみが使用するものとし、管理不十分や第三者の使用により生じた損害は利用者が負担します。</li></ul>
+<h2>第5条（本サービスの提供と変更）</h2>
+<ul><li>1. 本サービスは無料で提供されます。運営者は今後、有料機能や広告を導入することがあり、導入前にお知らせします。</li><li>2. 運営者は運営上・技術上の必要に応じて、機能、スキン、イベント、ガチャの構成の全部または一部を追加・変更・終了できます。利用者に重大な影響がある場合は事前にお知らせします。</li><li>3. 運営者は、保守点検、設備障害、外部サービス（Apple、Google、ホスティング事業者など）の障害、天災などがある場合、本サービスを一時停止できます。</li><li>4. 運営者は30日前にお知らせしたうえで、本サービス全体を終了できます。</li><li>5. 濫用防止のため、送信間隔、1時間あたりの送信回数、つながり・グループ・通報・申請の数に上限を設けます。上限は状況に応じて変わることがあります。</li></ul>
+<h2>第6条（緊急用途での使用禁止）</h2>
+<p><strong>シグナルは、ネットワーク、端末の設定、通知の許可、相手のおやすみ時間・ブロック設定などにより遅れたり届かなかったりすることがあります。</strong> 本サービスを緊急連絡、安否確認、医療・見守りの目的で使用しないでください。運営者は、シグナルの遅延・不達により生じた損害について責任を負いません。</p>
+<h2>第7条（禁止事項）</h2>
+<p>Ziiing は、不快・有害なコンテンツや他の利用者への嫌がらせを一切容認しません。次の行為を禁止します。</p>
+<ul><li>1. 相手が望まないシグナルを繰り返し送るなど、他の利用者に嫌がらせをする行為</li><li>2. 利用者コンテンツに暴言、差別、性的・暴力的な表現、違法な情報、広告、他人の個人情報を含める行為</li><li>3. 他人の著作権、商標権、肖像権などを侵害するスキンをアップロードする行為</li><li>4. 他人または運営者になりすます行為</li><li>5. 招待コードを無作為に入力して知らない人とつながろうとする行為</li><li>6. バグ、自動化ツール、複数アカウントを使ってスキン・かけら・ガチャの機会を不正に得る行為</li><li>7. 本サービスのリバースエンジニアリング、サーバーへの不正アクセスなど、正常な運営を妨げる行為</li></ul>
+<h2>第8条（利用者コンテンツ）</h2>
+<ul><li>1. 利用者コンテンツの権利は利用者に帰属します。利用者は、アップロードしたコンテンツを適法に使用する権利を有し、第三者の権利を侵害しないことを保証します。</li><li>2. 利用者は運営者に対し、本サービスの提供、スキンストアでの公開、サムネイル・プレビューの作成、本サービスの宣伝（アプリ画面のキャプチャ、ストア画像など）のために、利用者コンテンツを全世界で無償で使用・複製・改変・表示・配布できる非独占的な権利を許諾します。この権利は、利用者がコンテンツを取り下げたり退会したりした後も、他の利用者がすでに着用している範囲と作成済みの宣伝物については存続します。</li><li>3. 公開スキンは運営者の審査を経て公開されます。運営者は審査結果の理由をお知らせしますが、公開の可否は運営者が決定します。</li><li>4. 運営者は、通報を受けた利用者コンテンツや、本規約・法令に反すると判断した利用者コンテンツを、事前の通知なく非表示または削除できます。運営者は通報を受け付けてから24時間以内に確認を開始します。</li><li>5. 利用者コンテンツにより第三者との紛争が生じた場合、利用者が自己の費用と責任で解決し、運営者に損害が生じた場合はこれを賠償します。</li></ul>
+<h2>第9条（スキン、かけら、ガチャ）</h2>
+<ul><li>1. スキンとかけらは本サービス内で使用できる利用権であり、利用者の財産ではありません。現金その他の財物との交換や、他のアカウントへの譲渡はできません。</li><li>2. 無料ガチャのスキンごとの確率はアプリのガチャ画面に表示します。運営者はガチャの構成、確率、付与条件、交換コストを変更でき、変更した場合はアプリに表示します。</li><li>3. 誤りまたは不正な方法で得たスキン・かけらは、運営者が回収できます。</li><li>4. 退会または本サービスの終了により、保有するスキンとかけらは失われ、復元できません。</li><li>5. 有料アイテムを導入する場合、その購入・返金の条件は別途お知らせし、関連法令とアプリストアの規約に従います。</li></ul>
+<h2>第10条（通報、ブロック、利用制限）</h2>
+<ul><li>1. 利用者は、ミュート、おやすみ時間、ブロック、通報の機能で望まないシグナルやコンテンツを防げます。</li><li>2. 運営者は、利用者が本規約または法令に違反した場合、警告、コンテンツの削除、一時停止、永久停止、アカウント削除のうち必要な措置をとることができます。違反が重大な場合や他の利用者の保護が急を要する場合は、事前の通知なく措置し、事後にお知らせします。</li><li>3. 利用が制限された場合はアプリでその旨と理由をお知らせし、利用者は下記の連絡先に異議を申し立てることができます。</li></ul>
+<h2>第11条（退会）</h2>
+<p>利用者はアプリのアカウント画面からいつでも退会できます。退会すると、アカウントと関連情報はプライバシーポリシーに従って削除され、元に戻せません。</p>
+<h2>第12条（責任の制限）</h2>
+<ul><li>1. 本サービスは無料で「現状のまま」提供されます。運営者は、本サービスが中断なく、または誤りなく提供されることを保証しません。</li><li>2. 運営者は次の損害について責任を負いません。ただし、運営者の故意または重大な過失による損害を除きます。</li><li>(1) 第5条第3項の事由による本サービスの中断</li><li>(2) 利用者の責めに帰すべき事由、または端末・ネットワーク環境により生じた損害</li><li>(3) 利用者間、または利用者と第三者との間の紛争</li><li>(4) 利用者コンテンツおよび他の利用者が送ったシグナルの内容</li><li>(5) 間接損害、特別損害、結果的損害、逸失利益</li><li>3. 法令が許す範囲で、運営者の軽過失による損害賠償責任は、損害発生前3か月間に利用者が運営者に支払った金額を上限とします。</li></ul>
+<h2>第13条（利用者の損害賠償）</h2>
+<p>利用者が本規約または法令に違反して運営者または第三者に損害を与えた場合、その損害を賠償しなければなりません。この場合、運営者が第三者から請求を受けたときは、利用者は自己の費用で運営者を免責させなければなりません。</p>
+<h2>第14条（アプリストア）</h2>
+<p>App Store からダウンロードした場合、Apple の標準使用許諾契約（Licensed Application EULA）も適用されます。本サービスと本規約についての責任は運営者にあり、Apple は本サービスの保守・サポートや利用者からの請求について責任を負いません。Google Play も同様です。</p>
+<h2>第15条（準拠法と管轄）</h2>
+<p>本規約は大韓民国の法律に準拠します。本サービスに関する紛争は、大韓民国の民事訴訟法に基づく管轄裁判所で解決します。</p>
+<h2>第16条（お問い合わせ）</h2>
+<p>メール：ori_@kakao.com</p>
+<p>附則：本規約は施行日から適用し、2026-09-12 版に代わるものとします。</p>
+</section>
+</main>
 <footer>
-  <p>지잉(ziiing) · <a href="/ziiing-legal/privacy">개인정보 처리방침</a> · <a href="/ziiing-legal/terms">이용약관</a></p>
+  <p>Ziiing · <a href="/ziiing-legal/privacy" data-keep-lang="/ziiing-legal/privacy">개인정보 처리방침</a> · <a href="/ziiing-legal/terms" data-keep-lang="/ziiing-legal/terms">이용약관</a></p>
 </footer>
 </div>
+<script>
+(function () {
+  var sections = Array.prototype.slice.call(document.querySelectorAll('[data-lang]'));
+  var available = sections.map(function (s) { return s.getAttribute('data-lang'); });
+  if (!available.length) return;
+  function pick() {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q && available.indexOf(q) >= 0) return q;
+    var saved;
+    try { saved = localStorage.getItem('ziiing-legal-lang'); } catch (e) { saved = null; }
+    if (saved && available.indexOf(saved) >= 0) return saved;
+    var prefs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < prefs.length; i++) {
+      var base = String(prefs[i]).toLowerCase().split('-')[0];
+      if (available.indexOf(base) >= 0) return base;
+    }
+    return available[0];
+  }
+  function apply(lang, remember) {
+    sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== lang; });
+    document.documentElement.setAttribute('lang', lang);
+    var active = sections.filter(function (s) { return s.getAttribute('data-lang') === lang; })[0];
+    if (active && active.getAttribute('data-title')) document.title = active.getAttribute('data-title');
+    Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+      b.setAttribute('aria-current', String(b.getAttribute('data-set-lang') === lang));
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-keep-lang]'), function (a) {
+      a.setAttribute('href', a.getAttribute('data-keep-lang') + '?lang=' + lang);
+    });
+    if (remember) { try { localStorage.setItem('ziiing-legal-lang', lang); } catch (e) {} }
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-set-lang'), true); });
+  });
+  apply(pick(), false);
+})();
+</script>
 </body>
 </html>

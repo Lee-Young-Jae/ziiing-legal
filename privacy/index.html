@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>개인정보 처리방침 · 지잉</title>
-<meta name="description" content="지잉(ziiing) 개인정보 처리방침">
+<title>개인정보 처리방침 · Ziiing</title>
+<meta name="description" content="개인정보 처리방침">
 <meta name="robots" content="index, follow">
 <style>
 :root { color-scheme: dark; }
@@ -17,10 +17,16 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .wrap { max-width: 720px; margin: 0 auto; }
-header { padding: 48px 0 8px; }
+header { padding: 48px 0 8px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #F5F7FB; }
 .ring { width: 26px; height: 26px; border-radius: 50%; border: 8px solid #C6FF3D; }
 .mark span { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+.langs { display: flex; gap: 6px; }
+.langs button {
+  background: transparent; color: #8F98AC; border: 1px solid #232936; border-radius: 999px;
+  padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer;
+}
+.langs button[aria-current="true"] { background: #C6FF3D; color: #07090F; border-color: #C6FF3D; font-weight: 700; }
 h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.8px; margin: 28px 0 8px; }
 h2 { font-size: 19px; font-weight: 700; margin: 40px 0 10px; color: #C6FF3D; }
 p, li { color: #D7DCE6; }
@@ -54,28 +60,159 @@ footer a { color: #8F98AC; }
 </head>
 <body>
 <div class="wrap">
-<header><a class="mark" href="/ziiing-legal/"><span class="ring"></span><span>지잉</span></a></header>
+<header>
+  <a class="mark" href="/ziiing-legal/"><span class="ring"></span><span>Ziiing</span></a>
+  <nav class="langs" aria-label="language"><button type="button" data-set-lang="ko" aria-current="true">한국어</button><button type="button" data-set-lang="en">English</button><button type="button" data-set-lang="ja">日本語</button></nav>
+</header>
+<main>
+<section data-lang="ko" data-title="개인정보 처리방침 · Ziiing">
 <h1>지잉(ziiing) 개인정보 처리방침</h1>
-<p>시행일: 2026-09-12</p>
-<p>지잉(이하 &quot;앱&quot;)은 버튼 하나로 친구의 폰을 진동시키는 앱입니다. 이 문서는 앱이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
-<h2>1. 수집하는 정보</h2>
-<div class="table-scroll"><table><thead><tr><th>항목</th><th>내용</th><th>목적</th></tr></thead><tbody><tr><td data-label="항목">계정 식별자</td><td data-label="내용">Apple 또는 Google 로그인으로 받은 사용자 ID, 이메일(제공에 동의한 경우)</td><td data-label="목적">계정 생성·로그인</td></tr><tr><td data-label="항목">표시 이름</td><td data-label="내용">로그인 제공자에서 받은 이름 또는 직접 입력한 이름(20자 이내)</td><td data-label="목적">친구·그룹 화면과 알림에 표시</td></tr><tr><td data-label="항목">연결·그룹 정보</td><td data-label="내용">친구 연결, 그룹 참여, 초대 코드</td><td data-label="목적">서비스 핵심 기능</td></tr><tr><td data-label="항목">신호 기록</td><td data-label="내용">누가 누구에게 언제 어떤 패턴을 보냈는지</td><td data-label="목적">최근 신호 표시, 스트릭, 남용 방지(시간당 상한)</td></tr><tr><td data-label="항목">푸시 토큰</td><td data-label="내용">APNs·FCM 기기 토큰과 기기 종류</td><td data-label="목적">앱이 꺼져 있을 때 진동 전달</td></tr><tr><td data-label="항목">설정</td><td data-label="내용">음소거, 방해금지 시간, 시간대</td><td data-label="목적">사용자가 정한 대로 알림 억제</td></tr><tr><td data-label="항목">스킨 문자</td><td data-label="내용">미니폰 등 일부 스킨으로 주고받은 문자(최대 500자)와 보낸 시각</td><td data-label="목적">상대 화면에 표시, 신고 처리</td></tr><tr><td data-label="항목">내가 만든 스킨</td><td data-label="내용">스킨 이름과 모양·색 설정, 공개 여부</td><td data-label="목적">내 버튼 표시, 스킨 스토어 공개</td></tr><tr><td data-label="항목">보유 스킨·뽑기 기록</td><td data-label="내용">획득한 스킨 목록, 뽑기 사용 내역과 조각 수</td><td data-label="목적">도감 표시, 중복 지급 방지</td></tr><tr><td data-label="항목">신고·차단</td><td data-label="내용">신고 사유와 차단 목록</td><td data-label="목적">안전한 이용 환경 유지</td></tr><tr><td data-label="항목">이용 제한</td><td data-label="내용">운영자가 이용을 제한한 시각과 사유</td><td data-label="목적">제한 안내, 이의 처리</td></tr><tr><td data-label="항목">진단 정보</td><td data-label="내용">앱 충돌 로그(기기 모델, OS 버전, 충돌 시각)</td><td data-label="목적">오류 수정</td></tr></tbody></table></div>
-<p>연락처, 위치, 사진, 광고 식별자는 수집하지 않습니다.</p>
-<h2>2. 보관 기간</h2>
-<ul><li>신호 기록은 30일 뒤 자동 삭제됩니다.</li><li>만료된 초대 코드는 7일 뒤 삭제됩니다.</li><li>스킨 문자는 따로 보관 기간을 두지 않습니다. 보낸 사람이나 받은 사람이 계정을 삭제하면 함께 사라집니다.</li><li>그 외 정보는 계정을 삭제할 때 함께 삭제됩니다. 앱의 계정 화면에서 언제든 계정을 삭제할 수 있습니다.</li></ul>
-<h2>3. 제3자 제공 및 처리 위탁</h2>
-<p>앱은 개인정보를 판매하지 않습니다. 서비스 운영을 위해 아래 사업자에게 처리를 위탁합니다.</p>
-<ul><li>Supabase (데이터베이스·인증·서버 함수 호스팅, 서울 리전)</li><li>Apple Push Notification service, Firebase Cloud Messaging (푸시 전달)</li><li>Firebase Crashlytics (충돌 진단)</li></ul>
-<h2>4. 이용자의 권리</h2>
-<p>앱 안에서 표시 이름 변경, 친구 차단·해제, 그룹 탈퇴, 공개한 스킨 내리기, 계정 삭제를 직접 할 수 있습니다. 그 밖의 요청은 아래 연락처로 보내 주세요.</p>
-<h2>5. 만 14세 미만</h2>
-<p>만 14세 미만은 법정대리인의 동의 없이 앱을 이용할 수 없습니다.</p>
-<h2>6. 문의</h2>
-<p>이메일: ori_@kakao.com</p>
-<p>방침이 바뀌면 이 페이지의 시행일을 갱신하고 중요한 변경은 앱에서 알립니다.</p>
+<p>시행일: 2026-09-27</p>
+<p>지잉 운영자 이영재(이하 &quot;운영자&quot;)는 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고 관련 고충을 원활하게 처리하기 위해 다음과 같이 처리방침을 둡니다.</p>
+<h2>1. 처리하는 개인정보와 목적</h2>
+<div class="table-scroll"><table><thead><tr><th>항목</th><th>내용</th><th>목적</th></tr></thead><tbody><tr><td data-label="항목">계정</td><td data-label="내용">Apple·Google 계정 식별자, 서비스 사용자 ID, 제공된 경우 이메일(Apple &#39;이메일 가리기&#39; 시 중계 주소)</td><td data-label="목적">가입, 로그인, 본인 확인, 계정 관리</td></tr><tr><td data-label="항목">프로필·연결</td><td data-label="내용">표시 이름, 친구 연결, 그룹 이름·구성원, 초대 코드</td><td data-label="목적">상대 식별, 친구·그룹 기능</td></tr><tr><td data-label="항목">신호</td><td data-label="내용">발신·수신 사용자, 전송 시각, 패턴·횟수, 전달 여부, 톡의 뜻, 효과 설정</td><td data-label="목적">신호 전달·표시, 최근 기록, 남용 방지</td></tr><tr><td data-label="항목">기기·설정</td><td data-label="내용">푸시 토큰, 기기 종류, 앱 언어, 알림·방해금지 시간·시간대, 스킨 설정</td><td data-label="목적">알림 전달, 이용자 설정 적용</td></tr><tr><td data-label="항목">이용자 스킨</td><td data-label="내용">스킨 이름·설정, 이용자가 직접 올린 이미지·소리·애니메이션 파일, 공개·검토 상태</td><td data-label="목적">스킨 제작·미리보기, 공개 전 검토, 스토어 제공</td></tr><tr><td data-label="항목">스킨 획득</td><td data-label="내용">보유 스킨, 뽑기 기록, 조각 수, 지급 내역</td><td data-label="목적">스킨 제공, 중복 지급 방지, 부정 이용 방지</td></tr><tr><td data-label="항목">안전·운영</td><td data-label="내용">신고 사유·내용, 차단 목록, 이용 제한 사유·시각, 운영자 조치 기록</td><td data-label="목적">신고 처리, 악용 방지, 이의 처리</td></tr><tr><td data-label="항목">진단</td><td data-label="내용">충돌 기록(기기 모델, OS·앱 버전, 충돌 시각·스택)</td><td data-label="목적">오류 조사, 서비스 안정화</td></tr><tr><td data-label="항목">계정 삭제 시</td><td data-label="내용">Apple 재인증으로 받은 일회용 인증 코드</td><td data-label="목적">Apple 연결 해제(요청 처리 중에만 사용하고 저장하지 않음)</td></tr></tbody></table></div>
+<p>운영자는 위 정보를 서비스 제공 계약의 이행을 위해 처리합니다(「개인정보 보호법」 제15조 제1항 제4호). 연락처, 위치, 사진 보관함, 광고 식별자(IDFA)는 수집하지 않습니다. 카메라는 초대 QR을 읽을 때만 쓰며 영상을 저장하거나 전송하지 않습니다. 이용자 스킨 파일은 이용자가 직접 골라 올린 파일만 처리합니다.</p>
+<h2>2. 공개되는 정보</h2>
+<p>표시 이름과 그룹 정보는 연결된 친구·같은 그룹 구성원에게 보입니다. 스토어에 공개한 스킨의 이름, 제작자 표시 이름, 스킨 콘텐츠는 모든 이용자가 볼 수 있습니다.</p>
+<h2>3. 보유 기간과 파기</h2>
+<div class="table-scroll"><table><thead><tr><th>정보</th><th>보유 기간</th></tr></thead><tbody><tr><td data-label="정보">신호 기록</td><td data-label="보유 기간">전송 후 30일</td></tr><tr><td data-label="정보">만료된 초대 코드</td><td data-label="보유 기간">만료 후 7일</td></tr><tr><td data-label="정보">초대 코드 입력 시도 기록</td><td data-label="보유 기간">1일</td></tr><tr><td data-label="정보">계정, 프로필, 연결·그룹, 설정, 푸시 토큰, 스킨, 획득 기록, 신고·차단</td><td data-label="보유 기간">탈퇴 시까지 (탈퇴 즉시 삭제)</td></tr><tr><td data-label="정보">이용자가 올린 스킨 파일</td><td data-label="보유 기간">탈퇴 시 즉시 삭제</td></tr><tr><td data-label="정보">운영자 조치 기록(조치 종류, 대상 계정 식별자, 사유)</td><td data-label="보유 기간">분쟁 대응과 부정 이용 방지를 위해 조치 후 1년</td></tr><tr><td data-label="정보">충돌 기록</td><td data-label="보유 기간">수집 후 90일 (Firebase Crashlytics 보관 정책)</td></tr><tr><td data-label="정보">데이터베이스 백업(위 정보의 사본, 암호화 보관)</td><td data-label="보유 기간">백업 후 14일</td></tr></tbody></table></div>
+<ul><li>탈퇴하면 그룹 소유권을 다른 구성원에게 넘긴 뒤 위 정보를 삭제합니다.</li><li>법령이 보관을 요구하는 정보가 생기면 그 근거와 기간을 따로 알립니다.</li><li>전자적 파일은 복구할 수 없는 방법으로 삭제합니다.</li></ul>
+<h2>4. 제3자 제공</h2>
+<p>운영자는 이용자의 개인정보를 제3자에게 제공하거나 판매하지 않습니다. 다만 법령에 따른 요청이 있으면 예외로 합니다.</p>
+<h2>5. 처리 위탁과 국외 이전</h2>
+<p>운영자는 서비스 운영을 위해 아래 사업자에게 처리를 맡깁니다. 이 사업자들은 해외에 있거나 해외에서 정보에 접근할 수 있으므로 국외 이전에 해당합니다.</p>
+<div class="table-scroll"><table><thead><tr><th>받는 자 (연락처)</th><th>국가</th><th>항목</th><th>목적</th><th>시기·방법</th><th>보유 기간</th></tr></thead><tbody><tr><td data-label="받는 자 (연락처)">Supabase, Inc. (privacy@supabase.io)</td><td data-label="국가">미국 법인, 데이터는 대한민국(서울) 리전 저장</td><td data-label="항목">1항의 모든 서비스 정보</td><td data-label="목적">데이터베이스·인증·파일 저장·서버 기능</td><td data-label="시기·방법">이용 시 수시, 암호화 전송</td><td data-label="보유 기간">위탁 계약 종료 또는 3항 기간까지</td></tr><tr><td data-label="받는 자 (연락처)">Google LLC (Firebase: https://firebase.google.com/support/privacy)</td><td data-label="국가">미국</td><td data-label="항목">충돌 기록, 기기 정보, Android 푸시 토큰</td><td data-label="목적">충돌 진단(Crashlytics), Android 푸시 전달(FCM)</td><td data-label="시기·방법">충돌·신호 발생 시, 암호화 전송</td><td data-label="보유 기간">충돌 기록 90일, 푸시는 전달 시까지</td></tr><tr><td data-label="받는 자 (연락처)">Apple Inc. (https://www.apple.com/kr/privacy/contact/)</td><td data-label="국가">미국</td><td data-label="항목">iOS 푸시 토큰, 알림 내용(보낸 사람 표시 이름, 패턴)</td><td data-label="목적">iOS 푸시 전달(APNs)</td><td data-label="시기·방법">신호 발생 시, 암호화 전송</td><td data-label="보유 기간">전달 시까지</td></tr><tr><td data-label="받는 자 (연락처)">GitHub, Inc. (https://support.github.com/contact/privacy)</td><td data-label="국가">미국</td><td data-label="항목">3항의 데이터베이스 백업(암호화)</td><td data-label="목적">백업 보관</td><td data-label="시기·방법">매일, 암호화 파일 전송</td><td data-label="보유 기간">14일</td></tr><tr><td data-label="받는 자 (연락처)">Vercel Inc. (privacy@vercel.com)</td><td data-label="국가">미국</td><td data-label="항목">스킨 스튜디오 접속 기록(IP 등)</td><td data-label="목적">스킨 스튜디오 웹 호스팅</td><td data-label="시기·방법">접속 시, 암호화 전송</td><td data-label="보유 기간">Vercel 로그 보관 정책에 따름</td></tr></tbody></table></div>
+<p>국외 이전을 원하지 않으면 서비스 이용을 중단하고 탈퇴할 수 있습니다. 다만 위 처리는 서비스 제공에 꼭 필요하므로 이전을 거부하면 서비스를 이용할 수 없습니다.</p>
+<h2>6. 이용자의 권리와 행사 방법</h2>
+<p>이용자는 언제든 자신의 개인정보를 열람·정정·삭제하거나 처리 정지를 요구할 수 있습니다. 앱에서 표시 이름 변경, 친구 차단·해제, 그룹 탈퇴, 공개 스킨 내리기, 탈퇴를 직접 할 수 있고, 그 밖의 요청은 아래 연락처로 보내면 지체 없이 처리합니다. Apple로 가입한 계정은 탈퇴 과정에서 Apple 재인증을 요청할 수 있으며, 재인증을 할 수 없어도 탈퇴는 처리됩니다.</p>
+<h2>7. 만 14세 미만</h2>
+<p>만 14세 미만은 서비스에 가입할 수 없습니다. 만 14세 미만이 가입한 사실을 알게 되면 해당 계정과 정보를 지체 없이 삭제합니다.</p>
+<h2>8. 안전성 확보 조치</h2>
+<ul><li>전송 구간 암호화(HTTPS/TLS)</li><li>데이터베이스 행 단위 접근 통제(이용자는 자신과 관련된 정보만 조회)</li><li>운영자 권한 분리와 조치 기록 보관</li><li>인증 키·비밀 값의 별도 보관과 접근 제한</li></ul>
+<h2>9. 자동 수집 장치</h2>
+<p>앱은 쿠키나 광고 추적 장치를 쓰지 않으며, 이용자를 다른 회사의 앱·웹사이트에 걸쳐 추적하지 않습니다. 앱 설정 저장을 위해 기기 안의 저장 공간을 사용합니다.</p>
+<h2>10. 개인정보 보호책임자</h2>
+<ul><li>성명: 이영재</li><li>이메일: ori_@kakao.com</li></ul>
+<h2>11. 권익 침해 구제</h2>
+<p>개인정보 침해에 대한 상담이나 신고는 아래 기관에도 할 수 있습니다.</p>
+<ul><li>개인정보침해신고센터: privacy.kisa.or.kr / 국번 없이 118</li><li>개인정보분쟁조정위원회: www.kopico.go.kr / 1833-6972</li><li>대검찰청: www.spo.go.kr / 국번 없이 1301</li><li>경찰청: ecrm.police.go.kr / 국번 없이 182</li></ul>
+<h2>12. 방침의 변경</h2>
+<p>이 방침이 바뀌면 시행 7일 전부터 앱이나 이 페이지에 알립니다. 이용자 권리에 중대한 변경이 있으면 30일 전부터 알립니다.</p>
+<p>부칙: 이 방침은 시행일부터 적용하며 2026-09-12 판을 대체합니다. 2026-09-12 판에 적힌 스킨 문자 기능은 종료되었습니다. 기능 종료 전에 주고받은 문자는 이 방침 시행일에 삭제합니다.</p>
+</section>
+<section data-lang="en" data-title="Privacy Policy · Ziiing" hidden>
+<h1>Ziiing Privacy Policy</h1>
+<p>Effective date: 2026-09-27</p>
+<p>This policy is provided in Korean, English and Japanese. If they conflict, the Korean version prevails.</p>
+<p>Youngjae Lee, the operator of Ziiing (the &quot;Operator&quot;), protects users&#39; personal information under Korea&#39;s Personal Information Protection Act and sets out this policy.</p>
+<h2>1. Information we process and why</h2>
+<div class="table-scroll"><table><thead><tr><th>Item</th><th>Details</th><th>Purpose</th></tr></thead><tbody><tr><td data-label="Item">Account</td><td data-label="Details">Apple or Google account identifier, service user ID, email if provided (a relay address if you choose Apple&#39;s Hide My Email)</td><td data-label="Purpose">Sign-up, sign-in, identification, account management</td></tr><tr><td data-label="Item">Profile and connections</td><td data-label="Details">Display name, friend connections, group names and members, invite codes</td><td data-label="Purpose">Identifying each other, friend and group features</td></tr><tr><td data-label="Item">Signals</td><td data-label="Details">Sender and recipient, time, pattern and count, delivery status, tap meaning, effect settings</td><td data-label="Purpose">Delivering and showing signals, recent history, abuse prevention</td></tr><tr><td data-label="Item">Device and settings</td><td data-label="Details">Push token, device type, app language, notification and quiet-hour settings, time zone, skin settings</td><td data-label="Purpose">Delivering notifications, applying your settings</td></tr><tr><td data-label="Item">User skins</td><td data-label="Details">Skin names and settings, image, sound and animation files you upload, publication and review status</td><td data-label="Purpose">Creating and previewing skins, review before publication, store</td></tr><tr><td data-label="Item">Skin collection</td><td data-label="Details">Owned skins, draw history, piece count, grant history</td><td data-label="Purpose">Providing skins, preventing duplicate grants and abuse</td></tr><tr><td data-label="Item">Safety and operations</td><td data-label="Details">Report reasons and details, block list, restriction reasons and times, Operator action records</td><td data-label="Purpose">Handling reports, preventing abuse, appeals</td></tr><tr><td data-label="Item">Diagnostics</td><td data-label="Details">Crash records (device model, OS and app version, crash time and stack)</td><td data-label="Purpose">Investigating errors, stability</td></tr><tr><td data-label="Item">When deleting an account</td><td data-label="Details">One-time authorization code from Apple re-authentication</td><td data-label="Purpose">Revoking the Apple connection (used only while processing the request, not stored)</td></tr></tbody></table></div>
+<p>We process this information to perform our contract to provide the Service. We do not collect contacts, location, your photo library or the advertising identifier (IDFA). The camera is used only to scan invite QR codes; nothing is stored or sent. For user skins we only process files you choose to upload.</p>
+<h2>2. Information that is shown to others</h2>
+<p>Your display name and group information are visible to connected friends and members of the same group. The name, creator display name and content of skins you publish in the store are visible to all users.</p>
+<h2>3. Retention and deletion</h2>
+<div class="table-scroll"><table><thead><tr><th>Information</th><th>Retention</th></tr></thead><tbody><tr><td data-label="Information">Signal history</td><td data-label="Retention">30 days after sending</td></tr><tr><td data-label="Information">Expired invite codes</td><td data-label="Retention">7 days after expiry</td></tr><tr><td data-label="Information">Invite code attempts</td><td data-label="Retention">1 day</td></tr><tr><td data-label="Information">Account, profile, connections and groups, settings, push tokens, skins, collection, reports and blocks</td><td data-label="Retention">Until account deletion (deleted immediately)</td></tr><tr><td data-label="Information">Skin files you uploaded</td><td data-label="Retention">Deleted immediately on account deletion</td></tr><tr><td data-label="Information">Operator action records (action, target account identifier, reason)</td><td data-label="Retention">1 year after the action, for disputes and abuse prevention</td></tr><tr><td data-label="Information">Crash records</td><td data-label="Retention">90 days (Firebase Crashlytics retention)</td></tr><tr><td data-label="Information">Database backups (encrypted copies of the information above)</td><td data-label="Retention">14 days after the backup</td></tr></tbody></table></div>
+<ul><li>On deletion, group ownership passes to another member before the information above is deleted.</li><li>If the law requires us to keep any information, we will tell you the basis and period.</li><li>Electronic files are deleted so they cannot be recovered.</li></ul>
+<h2>4. Sharing with third parties</h2>
+<p>We do not provide or sell your personal information to third parties, except when required by law.</p>
+<h2>5. Processors and international transfers</h2>
+<p>We use the following providers to operate the Service. Because they are located abroad or can access information from abroad, this is an international transfer.</p>
+<div class="table-scroll"><table><thead><tr><th>Recipient (contact)</th><th>Country</th><th>Items</th><th>Purpose</th><th>When and how</th><th>Retention</th></tr></thead><tbody><tr><td data-label="Recipient (contact)">Supabase, Inc. (privacy@supabase.io)</td><td data-label="Country">US company; data stored in the Seoul, Korea region</td><td data-label="Items">All service information in section 1</td><td data-label="Purpose">Database, authentication, file storage, server functions</td><td data-label="When and how">As you use the Service, encrypted in transit</td><td data-label="Retention">Until contract end or the periods in section 3</td></tr><tr><td data-label="Recipient (contact)">Google LLC (Firebase: https://firebase.google.com/support/privacy)</td><td data-label="Country">US</td><td data-label="Items">Crash records, device information, Android push tokens</td><td data-label="Purpose">Crash diagnostics (Crashlytics), Android push (FCM)</td><td data-label="When and how">On crashes and signals, encrypted in transit</td><td data-label="Retention">Crash records 90 days; push until delivered</td></tr><tr><td data-label="Recipient (contact)">Apple Inc. (https://www.apple.com/privacy/contact/)</td><td data-label="Country">US</td><td data-label="Items">iOS push tokens, notification content (sender display name, pattern)</td><td data-label="Purpose">iOS push (APNs)</td><td data-label="When and how">On signals, encrypted in transit</td><td data-label="Retention">Until delivered</td></tr><tr><td data-label="Recipient (contact)">GitHub, Inc. (https://support.github.com/contact/privacy)</td><td data-label="Country">US</td><td data-label="Items">Database backups in section 3 (encrypted)</td><td data-label="Purpose">Storing backups</td><td data-label="When and how">Daily, encrypted files</td><td data-label="Retention">14 days</td></tr><tr><td data-label="Recipient (contact)">Vercel Inc. (privacy@vercel.com)</td><td data-label="Country">US</td><td data-label="Items">Skin studio access logs (such as IP address)</td><td data-label="Purpose">Hosting the skin studio website</td><td data-label="When and how">On access, encrypted in transit</td><td data-label="Retention">Per Vercel&#39;s log retention policy</td></tr></tbody></table></div>
+<p>If you do not want your information transferred abroad, you can stop using the Service and delete your account. These transfers are necessary to provide the Service, so the Service cannot be used without them.</p>
+<h2>6. Your rights</h2>
+<p>You can ask to access, correct or delete your personal information or to stop processing it at any time. In the app you can change your display name, block and unblock friends, leave groups, unpublish skins and delete your account. Send other requests to the contact below and we will handle them without delay. Accounts created with Apple may be asked to re-authenticate with Apple during deletion; the account is deleted even if re-authentication is not possible.</p>
+<h2>7. Children under 14</h2>
+<p>Children under 14 cannot sign up. If we learn that a child under 14 has signed up, we delete the account and its information without delay.</p>
+<h2>8. Security measures</h2>
+<ul><li>Encryption in transit (HTTPS/TLS)</li><li>Row-level access control in the database (users can only read information related to them)</li><li>Separated Operator privileges and records of Operator actions</li><li>Separate storage of and restricted access to keys and secrets</li></ul>
+<h2>9. Automatic collection</h2>
+<p>The app does not use cookies or advertising trackers and does not track you across other companies&#39; apps or websites. It uses on-device storage to save app settings.</p>
+<h2>10. Privacy officer</h2>
+<ul><li>Name: Youngjae Lee</li><li>Email: ori_@kakao.com</li></ul>
+<h2>11. Remedies</h2>
+<p>You can also contact the following Korean authorities about privacy violations:</p>
+<ul><li>Personal Information Infringement Report Center: privacy.kisa.or.kr / 118</li><li>Personal Information Dispute Mediation Committee: www.kopico.go.kr / 1833-6972</li><li>Supreme Prosecutors&#39; Office: www.spo.go.kr / 1301</li><li>Korean National Police Agency: ecrm.police.go.kr / 182</li></ul>
+<h2>12. Changes</h2>
+<p>We announce changes to this policy in the app or on this page at least 7 days before they take effect, or 30 days before for material changes to your rights.</p>
+<p>Addendum: This policy applies from the effective date and replaces the version dated 2026-09-12. The skin message feature described in the 2026-09-12 version has ended. Messages exchanged before it ended will be deleted on the effective date of this policy.</p>
+</section>
+<section data-lang="ja" data-title="プライバシーポリシー · Ziiing" hidden>
+<h1>Ziiing プライバシーポリシー</h1>
+<p>施行日：2026-09-27</p>
+<p>本ポリシーは韓国語・英語・日本語で提供します。内容に相違がある場合は韓国語版が優先します。</p>
+<p>Ziiing の運営者イ・ヨンジェ（Youngjae Lee、以下「運営者」）は、韓国の個人情報保護法に基づき、利用者の個人情報を保護するため本ポリシーを定めます。</p>
+<h2>1. 取り扱う情報と目的</h2>
+<div class="table-scroll"><table><thead><tr><th>項目</th><th>内容</th><th>目的</th></tr></thead><tbody><tr><td data-label="項目">アカウント</td><td data-label="内容">Apple・Google アカウントの識別子、サービスのユーザーID、提供された場合はメールアドレス（Apple の「メールを非公開」選択時は中継アドレス）</td><td data-label="目的">登録、ログイン、本人確認、アカウント管理</td></tr><tr><td data-label="項目">プロフィール・つながり</td><td data-label="内容">表示名、友だちとのつながり、グループ名・メンバー、招待コード</td><td data-label="目的">相手の識別、友だち・グループ機能</td></tr><tr><td data-label="項目">シグナル</td><td data-label="内容">送信者と受信者、送信時刻、パターン・回数、配信状況、タップの意味、エフェクト設定</td><td data-label="目的">シグナルの配信・表示、最近の履歴、濫用防止</td></tr><tr><td data-label="項目">端末・設定</td><td data-label="内容">プッシュトークン、端末の種類、アプリの言語、通知・おやすみ時間の設定、タイムゾーン、スキン設定</td><td data-label="目的">通知の配信、利用者の設定の適用</td></tr><tr><td data-label="項目">利用者スキン</td><td data-label="内容">スキンの名前・設定、利用者がアップロードした画像・音・アニメーションのファイル、公開・審査の状態</td><td data-label="目的">スキンの作成・プレビュー、公開前の審査、ストアでの提供</td></tr><tr><td data-label="項目">スキンの獲得</td><td data-label="内容">保有スキン、ガチャ履歴、かけらの数、付与履歴</td><td data-label="目的">スキンの提供、重複付与・不正の防止</td></tr><tr><td data-label="項目">安全・運営</td><td data-label="内容">通報の理由・内容、ブロックリスト、利用制限の理由・時刻、運営者の措置記録</td><td data-label="目的">通報対応、濫用防止、異議対応</td></tr><tr><td data-label="項目">診断</td><td data-label="内容">クラッシュ記録（端末モデル、OS・アプリのバージョン、クラッシュ時刻・スタック）</td><td data-label="目的">不具合の調査、安定化</td></tr><tr><td data-label="項目">アカウント削除時</td><td data-label="内容">Apple の再認証で受け取るワンタイム認証コード</td><td data-label="目的">Apple 連携の解除（処理中のみ使用し保存しません）</td></tr></tbody></table></div>
+<p>運営者は、これらの情報を本サービス提供契約の履行のために取り扱います。連絡先、位置情報、写真ライブラリ、広告識別子（IDFA）は収集しません。カメラは招待QRコードの読み取りにのみ使用し、映像を保存・送信しません。利用者スキンは、利用者が自ら選んでアップロードしたファイルのみを取り扱います。</p>
+<h2>2. 他の利用者に表示される情報</h2>
+<p>表示名とグループ情報は、つながっている友だちと同じグループのメンバーに表示されます。ストアで公開したスキンの名前、制作者の表示名、スキンのコンテンツはすべての利用者が閲覧できます。</p>
+<h2>3. 保存期間と削除</h2>
+<div class="table-scroll"><table><thead><tr><th>情報</th><th>保存期間</th></tr></thead><tbody><tr><td data-label="情報">シグナル履歴</td><td data-label="保存期間">送信後30日</td></tr><tr><td data-label="情報">期限切れの招待コード</td><td data-label="保存期間">期限切れ後7日</td></tr><tr><td data-label="情報">招待コードの入力試行記録</td><td data-label="保存期間">1日</td></tr><tr><td data-label="情報">アカウント、プロフィール、つながり・グループ、設定、プッシュトークン、スキン、獲得記録、通報・ブロック</td><td data-label="保存期間">退会まで（退会時に即時削除）</td></tr><tr><td data-label="情報">利用者がアップロードしたスキンファイル</td><td data-label="保存期間">退会時に即時削除</td></tr><tr><td data-label="情報">運営者の措置記録（措置の種類、対象アカウントの識別子、理由）</td><td data-label="保存期間">紛争対応と不正防止のため、措置後1年</td></tr><tr><td data-label="情報">クラッシュ記録</td><td data-label="保存期間">収集後90日（Firebase Crashlytics の保存ポリシー）</td></tr><tr><td data-label="情報">データベースのバックアップ（上記情報の暗号化された写し）</td><td data-label="保存期間">バックアップ後14日</td></tr></tbody></table></div>
+<ul><li>退会時は、グループの所有権を他のメンバーに移した後、上記の情報を削除します。</li><li>法令により保存が必要な情報が生じた場合は、その根拠と期間を別途お知らせします。</li><li>電子ファイルは復元できない方法で削除します。</li></ul>
+<h2>4. 第三者提供</h2>
+<p>運営者は利用者の個人情報を第三者に提供または販売しません。ただし、法令に基づく要請がある場合を除きます。</p>
+<h2>5. 委託と国外移転</h2>
+<p>運営者は本サービスの運営のため、以下の事業者に取り扱いを委託しています。これらの事業者は国外にあるか国外から情報にアクセスできるため、国外移転に該当します。</p>
+<div class="table-scroll"><table><thead><tr><th>受領者（連絡先）</th><th>国</th><th>項目</th><th>目的</th><th>時期・方法</th><th>保存期間</th></tr></thead><tbody><tr><td data-label="受領者（連絡先）">Supabase, Inc.（privacy@supabase.io）</td><td data-label="国">米国法人、データは韓国（ソウル）リージョンに保存</td><td data-label="項目">1項のすべてのサービス情報</td><td data-label="目的">データベース・認証・ファイル保存・サーバー機能</td><td data-label="時期・方法">利用時に随時、暗号化通信</td><td data-label="保存期間">委託契約の終了または3項の期間まで</td></tr><tr><td data-label="受領者（連絡先）">Google LLC（Firebase：https://firebase.google.com/support/privacy）</td><td data-label="国">米国</td><td data-label="項目">クラッシュ記録、端末情報、Android プッシュトークン</td><td data-label="目的">クラッシュ診断（Crashlytics）、Android プッシュ配信（FCM）</td><td data-label="時期・方法">クラッシュ・シグナル発生時、暗号化通信</td><td data-label="保存期間">クラッシュ記録90日、プッシュは配信まで</td></tr><tr><td data-label="受領者（連絡先）">Apple Inc.（https://www.apple.com/jp/privacy/contact/）</td><td data-label="国">米国</td><td data-label="項目">iOS プッシュトークン、通知の内容（送信者の表示名、パターン）</td><td data-label="目的">iOS プッシュ配信（APNs）</td><td data-label="時期・方法">シグナル発生時、暗号化通信</td><td data-label="保存期間">配信まで</td></tr><tr><td data-label="受領者（連絡先）">GitHub, Inc.（https://support.github.com/contact/privacy）</td><td data-label="国">米国</td><td data-label="項目">3項のデータベースのバックアップ（暗号化）</td><td data-label="目的">バックアップの保管</td><td data-label="時期・方法">毎日、暗号化ファイル</td><td data-label="保存期間">14日</td></tr><tr><td data-label="受領者（連絡先）">Vercel Inc.（privacy@vercel.com）</td><td data-label="国">米国</td><td data-label="項目">スキンスタジオのアクセス記録（IPアドレスなど）</td><td data-label="目的">スキンスタジオのウェブホスティング</td><td data-label="時期・方法">アクセス時、暗号化通信</td><td data-label="保存期間">Vercel のログ保存ポリシーによる</td></tr></tbody></table></div>
+<p>国外移転を望まない場合は、本サービスの利用をやめて退会できます。ただし、上記の取り扱いは本サービスの提供に不可欠なため、移転を拒否すると本サービスを利用できません。</p>
+<h2>6. 利用者の権利と行使方法</h2>
+<p>利用者はいつでも自己の個人情報の閲覧・訂正・削除・取り扱いの停止を求めることができます。アプリでは表示名の変更、友だちのブロック・解除、グループからの退出、公開スキンの取り下げ、退会を直接行えます。その他のご要望は下記の連絡先にお送りいただければ、遅滞なく対応します。Apple で登録したアカウントは退会時に Apple の再認証を求めることがありますが、再認証ができなくても退会は処理されます。</p>
+<h2>7. 14歳未満の方</h2>
+<p>14歳未満の方は登録できません。14歳未満の方の登録が判明した場合は、そのアカウントと情報を遅滞なく削除します。</p>
+<h2>8. 安全管理措置</h2>
+<ul><li>通信経路の暗号化（HTTPS/TLS）</li><li>データベースの行単位のアクセス制御（利用者は自分に関係する情報のみ閲覧可能）</li><li>運営者権限の分離と措置記録の保存</li><li>認証キー・秘密情報の分離保管とアクセス制限</li></ul>
+<h2>9. 自動収集</h2>
+<p>アプリは Cookie や広告トラッカーを使用せず、他社のアプリやウェブサイトをまたいで利用者を追跡しません。アプリの設定の保存に端末内のストレージを使用します。</p>
+<h2>10. 個人情報保護責任者</h2>
+<ul><li>氏名：イ・ヨンジェ（Youngjae Lee）</li><li>メール：ori_@kakao.com</li></ul>
+<h2>11. 権利侵害の救済</h2>
+<p>個人情報の侵害に関する相談・申告は、次の韓国の機関にも行えます。</p>
+<ul><li>個人情報侵害申告センター：privacy.kisa.or.kr / 118</li><li>個人情報紛争調停委員会：www.kopico.go.kr / 1833-6972</li><li>大検察庁：www.spo.go.kr / 1301</li><li>警察庁：ecrm.police.go.kr / 182</li></ul>
+<h2>12. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、施行の7日前から、利用者の権利に重大な変更がある場合は30日前から、アプリまたは本ページでお知らせします。</p>
+<p>附則：本ポリシーは施行日から適用し、2026-09-12 版に代わるものとします。2026-09-12 版に記載のスキンメッセージ機能は終了しました。終了前にやり取りしたメッセージは、本ポリシーの施行日に削除します。</p>
+</section>
+</main>
 <footer>
-  <p>지잉(ziiing) · <a href="/ziiing-legal/privacy">개인정보 처리방침</a> · <a href="/ziiing-legal/terms">이용약관</a></p>
+  <p>Ziiing · <a href="/ziiing-legal/privacy" data-keep-lang="/ziiing-legal/privacy">개인정보 처리방침</a> · <a href="/ziiing-legal/terms" data-keep-lang="/ziiing-legal/terms">이용약관</a></p>
 </footer>
 </div>
+<script>
+(function () {
+  var sections = Array.prototype.slice.call(document.querySelectorAll('[data-lang]'));
+  var available = sections.map(function (s) { return s.getAttribute('data-lang'); });
+  if (!available.length) return;
+  function pick() {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q && available.indexOf(q) >= 0) return q;
+    var saved;
+    try { saved = localStorage.getItem('ziiing-legal-lang'); } catch (e) { saved = null; }
+    if (saved && available.indexOf(saved) >= 0) return saved;
+    var prefs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < prefs.length; i++) {
+      var base = String(prefs[i]).toLowerCase().split('-')[0];
+      if (available.indexOf(base) >= 0) return base;
+    }
+    return available[0];
+  }
+  function apply(lang, remember) {
+    sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== lang; });
+    document.documentElement.setAttribute('lang', lang);
+    var active = sections.filter(function (s) { return s.getAttribute('data-lang') === lang; })[0];
+    if (active && active.getAttribute('data-title')) document.title = active.getAttribute('data-title');
+    Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+      b.setAttribute('aria-current', String(b.getAttribute('data-set-lang') === lang));
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-keep-lang]'), function (a) {
+      a.setAttribute('href', a.getAttribute('data-keep-lang') + '?lang=' + lang);
+    });
+    if (remember) { try { localStorage.setItem('ziiing-legal-lang', lang); } catch (e) {} }
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-set-lang'), true); });
+  });
+  apply(pick(), false);
+})();
+</script>
 </body>
 </html>

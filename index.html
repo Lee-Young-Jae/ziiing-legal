@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>지잉 · 지잉</title>
-<meta name="description" content="지잉(ziiing) 지잉">
+<title>Ziiing</title>
 <meta name="robots" content="index, follow">
 <style>
 :root { color-scheme: dark; }
@@ -17,10 +16,16 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .wrap { max-width: 720px; margin: 0 auto; }
-header { padding: 48px 0 8px; }
+header { padding: 48px 0 8px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #F5F7FB; }
 .ring { width: 26px; height: 26px; border-radius: 50%; border: 8px solid #C6FF3D; }
 .mark span { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+.langs { display: flex; gap: 6px; }
+.langs button {
+  background: transparent; color: #8F98AC; border: 1px solid #232936; border-radius: 999px;
+  padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer;
+}
+.langs button[aria-current="true"] { background: #C6FF3D; color: #07090F; border-color: #C6FF3D; font-weight: 700; }
 h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.8px; margin: 28px 0 8px; }
 h2 { font-size: 19px; font-weight: 700; margin: 40px 0 10px; color: #C6FF3D; }
 p, li { color: #D7DCE6; }
@@ -54,11 +59,76 @@ footer a { color: #8F98AC; }
 </head>
 <body>
 <div class="wrap">
-<header><a class="mark" href="/ziiing-legal/"><span class="ring"></span><span>지잉</span></a></header>
-<h1>지잉 (ziiing)</h1><p>버튼 하나로 친구의 폰을 진동시키는 앱입니다.</p><ul><li><a href="/ziiing-legal/privacy">개인정보 처리방침</a></li><li><a href="/ziiing-legal/terms">이용약관</a></li></ul><p>문의: <a href="mailto:ori_@kakao.com">ori_@kakao.com</a></p>
-<footer>
-  <p>지잉(ziiing) · <a href="/ziiing-legal/privacy">개인정보 처리방침</a> · <a href="/ziiing-legal/terms">이용약관</a></p>
-</footer>
+<header>
+  <a class="mark" href="/ziiing-legal/"><span class="ring"></span><span>Ziiing</span></a>
+  <nav class="langs" aria-label="language"><button type="button" data-set-lang="ko" aria-current="true">한국어</button><button type="button" data-set-lang="en">English</button><button type="button" data-set-lang="ja">日本語</button></nav>
+</header>
+<main>
+<section data-lang="ko" data-title="Ziiing">
+<h1>Ziiing</h1>
+<p>버튼 하나로 친구의 폰을 진동시키는 앱입니다.</p>
+<ul>
+<li><a href="/ziiing-legal/privacy" data-keep-lang="/ziiing-legal/privacy">개인정보 처리방침</a></li>
+<li><a href="/ziiing-legal/terms" data-keep-lang="/ziiing-legal/terms">이용약관</a></li>
+</ul>
+<p>문의: <a href="mailto:ori_@kakao.com">ori_@kakao.com</a></p>
+</section>
+<section data-lang="en" data-title="Ziiing" hidden>
+<h1>Ziiing</h1>
+<p>One button. Your friend&#39;s phone buzzes.</p>
+<ul>
+<li><a href="/ziiing-legal/privacy" data-keep-lang="/ziiing-legal/privacy">Privacy Policy</a></li>
+<li><a href="/ziiing-legal/terms" data-keep-lang="/ziiing-legal/terms">Terms of Service</a></li>
+</ul>
+<p>Contact: <a href="mailto:ori_@kakao.com">ori_@kakao.com</a></p>
+</section>
+<section data-lang="ja" data-title="Ziiing" hidden>
+<h1>Ziiing</h1>
+<p>ボタンひとつで友だちのスマホが震えるアプリです。</p>
+<ul>
+<li><a href="/ziiing-legal/privacy" data-keep-lang="/ziiing-legal/privacy">プライバシーポリシー</a></li>
+<li><a href="/ziiing-legal/terms" data-keep-lang="/ziiing-legal/terms">利用規約</a></li>
+</ul>
+<p>お問い合わせ: <a href="mailto:ori_@kakao.com">ori_@kakao.com</a></p>
+</section>
+</main>
 </div>
+<script>
+(function () {
+  var sections = Array.prototype.slice.call(document.querySelectorAll('[data-lang]'));
+  var available = sections.map(function (s) { return s.getAttribute('data-lang'); });
+  if (!available.length) return;
+  function pick() {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q && available.indexOf(q) >= 0) return q;
+    var saved;
+    try { saved = localStorage.getItem('ziiing-legal-lang'); } catch (e) { saved = null; }
+    if (saved && available.indexOf(saved) >= 0) return saved;
+    var prefs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < prefs.length; i++) {
+      var base = String(prefs[i]).toLowerCase().split('-')[0];
+      if (available.indexOf(base) >= 0) return base;
+    }
+    return available[0];
+  }
+  function apply(lang, remember) {
+    sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== lang; });
+    document.documentElement.setAttribute('lang', lang);
+    var active = sections.filter(function (s) { return s.getAttribute('data-lang') === lang; })[0];
+    if (active && active.getAttribute('data-title')) document.title = active.getAttribute('data-title');
+    Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+      b.setAttribute('aria-current', String(b.getAttribute('data-set-lang') === lang));
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-keep-lang]'), function (a) {
+      a.setAttribute('href', a.getAttribute('data-keep-lang') + '?lang=' + lang);
+    });
+    if (remember) { try { localStorage.setItem('ziiing-legal-lang', lang); } catch (e) {} }
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-set-lang'), true); });
+  });
+  apply(pick(), false);
+})();
+</script>
 </body>
 </html>
